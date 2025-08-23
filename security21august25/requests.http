@@ -1,0 +1,41 @@
+POST localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+###
+
+POST localhost:8080/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NTk0OTI0OSwiZXhwIjoxNzU1OTUyMjQ5fQ.4gGtEF1lWOGGSwdem85GbX5jQAZujiuWld_9pd6T_Xk
+Content-Type: application/json
+
+{
+  "userName": "igorek",
+  "password": "1234"
+}
+
+###
+
+GET localhost:8080/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NTk0OTI0OSwiZXhwIjoxNzU1OTUyMjQ5fQ.4gGtEF1lWOGGSwdem85GbX5jQAZujiuWld_9pd6T_Xk
+
+
+###
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "username": "Igor",
+  "password": "1234"
+}
+
+
+###
+
+POST localhost:8080/user/promote/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NTk0OTI0OSwiZXhwIjoxNzU1OTUyMjQ5fQ.4gGtEF1lWOGGSwdem85GbX5jQAZujiuWld_9pd6T_Xk
+
+
